@@ -18,9 +18,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #f9fafb;
-      background-image: linear-gradient(135deg, #f9fafb 0%, #e0e0e0 74%);
-      background-size: cover;
+      background: url('../images/login-bg.jpg');
+    background-position: center;
+   background-size: cover;
     }
     .main-container {
       display: grid;
@@ -29,9 +29,10 @@
       max-width: 1050px;
       height: auto;
       padding: 20px;
-      background-color: #ffffff;
+      background: linear-gradient(to right,rgba(0, 90, 167, .8)    , rgba(186,97,0,.4));
+    box-shadow: 0 0 25px rgba(0 ,0,0,.9);
       border-radius: 10px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
     }
     .poster {
       display: flex;
@@ -77,6 +78,27 @@
     .signup_btn:hover {
       background-color: #5114B9;
     }
+    .logo
+{
+    position: absolute;
+    top : 0rem;
+    font-size: 4.8rem;
+    font-weight: 700;
+    color: white;
+    transition: all 0.4s ease;
+    margin-bottom: .2rem;
+    text-shadow: 0 0 19px rgba(0,0,0,1);
+    border-radius: 2rem;
+
+}
+.logo:hover{
+    text-shadow: 0 0 29px rgba(255,255,255,0.8);
+    transform: scale(1.1);
+}
+.logo a span{
+    color: rgba(186,97,0,.9);
+    font-size: 5rem;
+}
     @media (max-width: 1024px) {
       .main-container {
         grid-template-columns: 1fr;
@@ -93,6 +115,9 @@
   </style>
 </head>
 <body>
+<div class="logo">
+                    <a href="/"><span>S</span>hoes<span>O</span>n</a>
+                </div>
   <div class="main-container">
     <!-- Poster Section -->
     <div class="poster">
